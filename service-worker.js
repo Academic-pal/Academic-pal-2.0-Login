@@ -1,14 +1,14 @@
 self.addEventListener('install', event => {
     event.waitUntil(
-      caches.open('v1').then(cache => {
+      caches.open('static-cache').then(cache => {
         return cache.addAll([
           '/',
           '/index.html',
-          '/styles.css',
-          '/script.js',
-          '/manifest.json',
-          '/path/to/icon-192x192.png',
-          '/path/to/icon-512x512.png'
+      
+          '/logo.png',
+          '/favicon.png',
+          '/manifest.json'
+          // Add other assets that you want to cache
         ]);
       })
     );
