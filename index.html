@@ -177,32 +177,35 @@
     }
 
     .install-button {
-      background-color: #FFD700; /* Yellow color for the button */
-      color: #2c2c2c; /* Black color for the text */
-      border: none;
-      padding: 15px 30px;
-      font-size: 1.2em;
-      border-radius: 10px;
-      cursor: pointer;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-      transition: background-color 0.3s, transform 0.3s;
-      display: none; /* Hidden initially */
-    }
+  background-color: #FFD700; /* Yellow color for the button */
+  color: #2c2c2c; /* Black color for the text */
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.3s;
+  display: none; /* Hidden initially */
+  position: absolute; /* Positioning for centering */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+}
 
-    .install-button:hover {
-      background-color: #FFC107; /* Slightly darker yellow for hover effect */
-      transform: translateY(-2px); /* Slight lift effect */
-    }
+.install-button:hover {
+  background-color: #FFC107; /* Slightly darker yellow for hover effect */
+  transform: translateY(-2px); /* Slight lift effect */
+}
 
-    .install-button:active {
-      background-color: #FFB300; /* Even darker yellow for active state */
-      transform: translateY(0); /* Reset lift effect */
-    }
+.install-button:active {
+  background-color: #FFB300; /* Even darker yellow for active state */
+  transform: translateY(0); /* Reset lift effect */
+}
 
-    .install-button:focus {
-      outline: none; /* Remove default focus outline */
-      box-shadow: 0 0 0 4px rgba(255, 215, 0, 0.5); /* Yellow focus ring */
-    }
+.install-button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 4px rgba(255, 215, 0, 0.5); /* Yellow focus ring */
+}
 
   </style>
 </head>
