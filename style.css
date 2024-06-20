@@ -37,14 +37,6 @@ body, html {
     animation: fadeIn 2s ease-in-out, colorChange 3s infinite;
   }
 
-  @keyframes colorChange {
-    0%, 100% {
-      color: #FFD700;
-    }
-    50% {
-      color: red;
-    }
-  }
 
   .enter-button {
     background-color: #FFD700;
@@ -186,3 +178,14 @@ body, html {
   .footer-links a:hover {
     text-decoration: underline;
   }
+
+
+
+
+
+
+  .gradient-text {
+    background: linear-gradient(to right, white, #FFD700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
