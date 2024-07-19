@@ -9,5 +9,5 @@ if ('serviceWorker' in navigator) {
   }
 
   document.querySelector('.enter-button').addEventListener('click', () => {
-    window.location.href = 'https://hari-hara7.github.io/pop-page/';
+    window.location.href = 'https://pop-page.vercel.app/';
   });
